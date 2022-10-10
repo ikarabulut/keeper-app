@@ -1,11 +1,17 @@
 import React from "react"
 import HomePage from "./HomePage"
 import Login from "./Login"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
-  let isLoggedIn = true
-
-  return isLoggedIn ? <HomePage /> : <Login />
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App
