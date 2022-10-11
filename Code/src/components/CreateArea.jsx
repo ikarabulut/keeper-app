@@ -48,7 +48,11 @@ function CreateArea(props) {
           placeholder="Take a note..."
           rows={isExpanded ? 3 : 1}
         />
-        {isExpanded && <button onClick={submitNote}>Add</button>}
+        {isExpanded && (
+          <button name="addNote" onClick={submitNote}>
+            Add
+          </button>
+        )}
       </form>
     </div>
   )
