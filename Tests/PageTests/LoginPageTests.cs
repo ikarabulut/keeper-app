@@ -48,7 +48,7 @@ public class LoginPageTests : IDisposable
 
         HomePage home = _loginPage.LoginValidUser();
 
-        Assert.Equal("Keeper", home.getHeaderText());
+        Assert.Equal("Keeper", home.GetHeaderText());
     }
 
 }
