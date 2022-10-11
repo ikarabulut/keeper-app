@@ -42,18 +42,22 @@ function Login() {
       <p>Please log-in</p>
       <form className="form">
         <input
+          name="username"
           onChange={handleUsernameChange}
           type="text"
           placeholder="Username"
           value={username}
         />
         <input
+          name="password"
           onChange={handlePasswordChange}
           type="password"
           placeholder="Password"
           value={password}
         />
-        <button onClick={navigateToHome}>Login</button>
+        <button name="signin" onClick={navigateToHome}>
+          Login
+        </button>
       </form>
       {loginError && (
         <h2 id="loginError">Incorrect Credentials, Please try again</h2>
