@@ -28,7 +28,7 @@ jobs:
       - name: Run Selenium test suite
         run: |
           cd ./Tests
-          dotnet test --logger trx
+          dotnet test --logger html
       - name: Upload test result artifact for records
         uses: actions/upload-artifact@v3
         with:
