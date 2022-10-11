@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 function CreateArea(props) {
-  const [isExpanded, setExpanded] = useState(false)
+  const [isExpanded, setExpanded] = useState(true)
 
   const [note, setNote] = useState({
     title: "",
